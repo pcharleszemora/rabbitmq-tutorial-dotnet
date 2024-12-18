@@ -37,6 +37,13 @@ consumer.ReceivedAsync += (model, ea) =>
     return Task.CompletedTask;
 };
 
+// Note from Module 02: Work Queues
+// autoAck: true turns off Manual message acknowledgement (default)
+// We typically always want autoAck : false
+// The reason why is b/c RabbitMQ will 're-queue' messages that are not processed (i.e. messages that a consumer does not send a delivery message acknowledgement)
+// This is helpful in scenarios where there are network failures and/or Consumer failures (e.g. A Worker fails or is taken off line)
+// RabbitMQ keeps track of the messages it sends for this purpose.
+// We'll implement an actual message acknowledgement in Module 2
 await channel.BasicConsumeAsync(
     queue: _queue, 
     autoAck: true, 
