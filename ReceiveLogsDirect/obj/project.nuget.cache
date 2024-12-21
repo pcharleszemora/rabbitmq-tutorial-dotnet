@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hOsJwogCTv4=",
+  "success": true,
+  "projectFilePath": "/Users/pat.szemora/repos/RabbitMQTutorial/ReceiveLogsDirect/ReceiveLogsDirect.csproj",
+  "expectedPackageFiles": [
+    "/Users/pat.szemora/.nuget/packages/rabbitmq.client/7.0.0/rabbitmq.client.7.0.0.nupkg.sha512",
+    "/Users/pat.szemora/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/Users/pat.szemora/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
